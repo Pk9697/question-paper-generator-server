@@ -38,7 +38,6 @@ export const getQuestionDistribution = async (req, res) => {
 
     const allRandomQuestions = [...randomEasyQuestions, ...randomMediumQuestions, ...randomHardQuestions]
 
-    console.log({ randomHardQuestions })
     return res.status(200).json({
       success: true,
       message: 'Here are all your specific questions',
